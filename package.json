@@ -1,0 +1,8 @@
+{
+  "name": "git-green-wave",
+  "version": "0.0.1",
+  "dependencies": {
+    "isomorphic-git": "^1.2.0",
+    "memfs": "^3.1.1"
+  }
+}
