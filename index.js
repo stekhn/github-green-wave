@@ -8,13 +8,13 @@ const url = new URL(config.auth.url);
 url.username = config.auth.username;
 url.password = config.auth.token || config.auth.password;
 
-(async function init() {
+exports.githubGreenWave = async () => {
   await gitClone();  
   await writeFile();
   await gitAdd();
   await gitCommit();
   await gitPush();
-})();
+};
 
 function writeFile() {
   const path = `${dir}${filepath}`;
