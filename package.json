@@ -1,6 +1,16 @@
 {
   "name": "git-green-wave",
+  "description": "Automatically commit to Github to keep your contribution history green",
   "version": "0.0.1",
+  "author": "Steffen Kühne",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:br-data/webpack-longread-template.git"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "dependencies": {
     "isomorphic-git": "^1.2.0",
     "memfs": "^3.1.1"
