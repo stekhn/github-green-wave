@@ -1,0 +1,29 @@
+# Project
+config.json
+
+# Node
+node_modules
+logs
+*.log
+pids
+*.pid
+*.seed
+.grunt
+.tmp
+build/Release
+.lock-wscript
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
