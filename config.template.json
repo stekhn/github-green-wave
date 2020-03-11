@@ -1,0 +1,17 @@
+{
+  "dir": "/",
+  "filepath": "dummy.txt",
+  "auth": {
+    "username": "my-username",
+    "token": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "password": "",
+    "url": "https://github.com/my-username/my-repo.git"
+  },
+  "commit": {
+    "author": {
+      "name": "First Last",
+      "email": "first.last@example.org"
+    },
+    "message": "Update file"
+  }
+}
