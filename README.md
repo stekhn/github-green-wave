@@ -12,12 +12,15 @@ https://help.github.com/en/github/authenticating-to-github/creating-a-personal-a
 
 ```console
 $ gcloud projects create github-green-wave
+```
 
 ```console
 $ gcloud config set project github-green-wave
+```
 
 ```console
 $ gcloud config set functions/region europe-west1
+```
 
 ```console
 $ gcloud functions deploy githubGreenWave --runtime nodejs10 --trigger-http GET --allow-unauthenticated
