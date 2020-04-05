@@ -1,6 +1,6 @@
 {
   "dir": "/",
-  "filepath": "dummy.txt",
+  "filename": "dummy.txt",
   "auth": {
     "username": "my-username",
     "token": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
