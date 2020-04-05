@@ -12,13 +12,17 @@ url.username = config.auth.username;
 url.password = config.auth.token || config.auth.password;
 
 exports.githubGreenWave = async () => {
-  await gitClone();  
-  await writeFile();
-  await gitAdd();
-  await gitCommit();
-  await gitPush();
-  await removeGit();
+  await gitClone().catch(handleError);
+  await writeFile().catch(handleError);
+  await gitAdd().catch(handleError);
+  await gitCommit().catch(handleError);
+  await gitPush().catch(handleError);
+  await removeGit().catch(handleError);
 };
+
+function handleError(err) {
+  console.error(err);
+}
 
 async function writeFile() {
   return new Promise((resolve, reject) => {
