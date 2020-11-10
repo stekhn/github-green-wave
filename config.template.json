@@ -13,5 +13,6 @@
       "email": "first.last@example.org"
     },
     "message": "Update file"
-  }
+  },
+  "probability": 1
 }
