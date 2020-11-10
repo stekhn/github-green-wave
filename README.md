@@ -18,12 +18,10 @@ $ gcloud projects create github-green-wave
 $ gcloud config set project github-green-wave
 ```
 
-```console
-$ gcloud config set functions/region europe-west1
-```
+https://cloud.google.com/compute/docs/regions-zones
 
 ```console
-$ gcloud functions deploy githubGreenWave --runtime nodejs10 --trigger-http GET --allow-unauthenticated
+$ gcloud config set functions/region europe-west1
 ```
 
 ```console
@@ -46,10 +44,12 @@ https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 https://cloud.google.com/sdk/gcloud/reference/scheduler/jobs/create/pubsub
 
-## Alternative deployments
-
-## Similar projects
-
 ```console
 gcloud functions call publish --data '{ "topic": "start-green-wave", "message": "undefined" }'
 ```
+
+```console
+$ gcloud functions deploy githubGreenWave --runtime nodejs10 --trigger-http GET --allow-unauthenticated
+```
+
+## Similar projects
