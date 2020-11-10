@@ -1,22 +1,33 @@
-# Github Green Wave
+# Github Green Wave 🌿
 
-Github Green Wave helps you to keep your Github contribution timeline green by automatically creating commits. With Github Green Wave you can make it look like you are the hardest working developer in your company, even though you're just hanging out in front of Netflix all the time.
+Github Green Wave helps you to keep your Github contribution timeline green by automatically creating commits. With Github Green Wave you can make it look like you are the hardest working developer in your company, even though you're just hanging out in front of Netflix all day.
 
-This project is built using [isomorphic-git](https://github.com/isomorphic-git/isomorphic-git) and[memfs](https://github.com/streamich/memfs), so it doesn't depend on Git or a local file system and will even run in a Google Cloud Function.
+![Github contribution timeline (example)](history.png)
+
+This project is built using [isomorphic-git](https://github.com/isomorphic-git/isomorphic-git) and [memfs](https://github.com/streamich/memfs), so it doesn't depend on Git or a local file system and will run as a Google Cloud Function.
 
 Before you consider faking commits to polish your contribution calender, you might want to [read this note](#note).
 
 ## Usage
 
 - Clone repository `git clone https://github.com/stekhn/github-green-wave.git`
-- Install required modules `npm install`
+- Create the [target repository](#target-repository)
+- Create a [configuration file](#configuration-file)
+
+Run it on your local machine ...
+
+- Install required dependencies `npm install`
 - Start development server `npm watch`
+
+... or run it in the cloud
+
+- [Deploy to Google Cloud](#google-cloud-deployment)
 
 This script is written in JavaScript and requires [Node.js](https://nodejs.org/en/) to run.
 
 ## Target repository
 
-You'll need to [create a new Github repository](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/create-a-repo) that will serve as a target for your fake commits. This Github repo will host one file, that is going to be periodically updated in order to make those sweet commits. Of course, you can set this repository to be private, if you want to hide your shenanigans from other honest developers.
+You'll need to [create a new Github repository](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/create-a-repo) that will serve as a target for your fake commits. This Github repo will host one file, that is going to be periodically updated in order to make those sweet commits. Of course, you can set this repository to be private, if you want to hide your shenanigans from your honest co-workers.
 
 ## Configuration file
 
